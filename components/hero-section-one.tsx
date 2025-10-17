@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { HeroHeader } from './header'
 import { ChevronRight, CirclePlay } from 'lucide-react'
@@ -45,30 +46,30 @@ export default function HeroSection() {
                                     <p className="text-muted-foreground">Trusted by teams at :</p>
                                     <div className="mt-6 grid max-w-sm grid-cols-3 gap-6">
                                         <div className="flex">
-                                            <img
+                                            <Image
                                                 className="h-4 w-fit"
                                                 src="https://html.tailus.io/blocks/customers/column.svg"
                                                 alt="Column Logo"
-                                                height="16"
-                                                width="auto"
+                                                height={16}
+                                                width={100}
                                             />
                                         </div>
                                         <div className="flex">
-                                            <img
+                                            <Image
                                                 className="h-5 w-fit"
                                                 src="https://html.tailus.io/blocks/customers/nvidia.svg"
                                                 alt="Nvidia Logo"
-                                                height="20"
-                                                width="auto"
+                                                height={20}
+                                                width={100}
                                             />
                                         </div>
                                         <div className="flex">
-                                            <img
+                                            <Image
                                                 className="h-4 w-fit"
                                                 src="https://html.tailus.io/blocks/customers/github.svg"
                                                 alt="GitHub Logo"
-                                                height="16"
-                                                width="auto"
+                                                height={16}
+                                                width={100}
                                             />
                                         </div>
                                     </div>
